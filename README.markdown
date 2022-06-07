@@ -70,7 +70,7 @@ Make sure you have git, git-svn, and ruby installed.  svn2git is a ruby wrapper 
 
 Once you have the necessary software on your system, you can install svn2git through rubygems, which will add the `svn2git` command to your PATH.    
 
-    $ sudo gem install svn2git
+    $ sudo gem install svn2git3
 
 
 Usage
@@ -120,7 +120,7 @@ one of them.
 
 If this doesn't cooperate and you need to specify a password on the command-line:
 
-        $ svn2git http://svn.example.com/path/to/repo --username <<user_with_perms>> --password <<password>>
+        $ SVN2GIT_PASSWORD=<<password>> svn2git http://svn.example.com/path/to/repo --username <<user_with_perms>>
 
 8. You need to migrate starting at a specific svn revision number.
 
@@ -206,7 +206,6 @@ Options Reference
     Specific options:
             --rebase                     Instead of cloning a new project, rebase an existing one against SVN
             --username NAME              Username for transports that needs it (http(s), svn)
-            --password PASS              Password for transports that needs it (http(s), svn)
             --trunk TRUNK_PATH           Subpath to trunk from repository URL (default: trunk)
             --branches BRANCHES_PATH     Subpath to branches from repository URL (default: branches); can be used multiple times
             --tags TAGS_PATH             Subpath to tags from repository URL (default: tags); can be used multiple times

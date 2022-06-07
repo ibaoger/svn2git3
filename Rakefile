@@ -5,11 +5,11 @@ require 'rubygems/package_task'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |spec|
-    spec.name = "svn2git"
+    spec.name = "svn2git3"
     spec.summary = "A tool for migrating svn projects to git"
-    spec.authors = ["James Coglan", "Kevin Menard"]
-    spec.homepage = "https://github.com/nirvdrum/svn2git"
-    spec.email = "nirvdrum@gmail.com"
+    spec.authors = ["James Coglan", "Kevin Menard", "Abao"]
+    spec.homepage = "https://github.com/ibaoger/svn2git3"
+    spec.email = "ibaoger@hotmail.com"
     spec.license = 'MIT'
     spec.add_development_dependency 'minitest'
   end
